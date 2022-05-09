@@ -91,16 +91,14 @@ class ConfiguratorParametrization(Parametrization):
         options=["Sandia National Laboratories", "California Energy Commission"],
         default="Sandia National Laboratories",
         flex=70,
-        autoselect_single_option=True,
-    )
+        autoselect_single_option=True)
 
     step_2.inverter_name = OptionField(
         "Inverter model",
         options=_get_inverter_name_list,
         default="Generac Power Systems Inverter",
         flex=50,
-        autoselect_single_option=True,
-    )
+        autoselect_single_option=True)
 
     step_2.module_name = OptionField(
         "Module model",
@@ -116,8 +114,7 @@ class ConfiguratorParametrization(Parametrization):
         ],
         flex=50,
         autoselect_single_option=True,
-        default="AstroPower APX-120",
-    )
+        default="AstroPower APX-120")
 
     # Step 3 contains the calculation of the break-even point and visualisation thereof
     step_3 = Step("Step 3 Visualise your return-on-investment", views="get_plotly_view")

@@ -41,7 +41,6 @@ class Controller(ViktorController):
 
     label = "Configurator"
     parametrization = ConfiguratorParametrization(width=30)
-    viktor_convert_entity_field = True
 
     @MapView("Map", duration_guess=1)  # only visible on "Step 1"
     def get_map_view(self, params: Munch, **kwargs):
