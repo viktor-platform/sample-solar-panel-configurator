@@ -11,5 +11,3 @@ entities:
 - entity_type: Configurator
   properties:
     name: Configurators
-
-# Meta data
